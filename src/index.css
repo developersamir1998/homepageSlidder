@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body{
+    /* background-image: url('C:/Users/sandeepkumar.saroj/Desktop/Living labs/card slider/card-slider/public/clients/image1.jpg'); */
+    background-color: #14161b;
+  }
+}
+.slick-slide > div {
+  margin: 0 10px;
+}
+.mt-20 {
+  margin-top: 30rem;
+}
