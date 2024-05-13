@@ -162,16 +162,16 @@ function App() {
     <div className="mt-20">
       <Slider {...settings}>
         {data.map((d)=>(
-          <div className="bg-white h-[500px] text-black rounded-xl">
+          <div className="bg-white h-[800px] text-black rounded-xl">
             <div className="h-56 rounded-t-xl bg-indigo-500 flex justify-center items-center">
               <img src={d.img} alt="" className="h-44 w-44 rounded-full"/>
             </div>
 
-            <div className="flex flex-col justify-center items-center gap-4 p-4">
-              <p className="text-xl font-semibold">{d.name}</p>
-              <p>{d.review}</p>
+            <div className="my-flex-container">
+            <p className="text-xl font-semibold" style={{ fontSize: '2rem' }}>{d.name}</p>
+              <p style={{ fontSize: '2rem' }}>{d.review}</p>
               <button
-               className="bg-indigo-500 text-white text-lg px-6 py-1 rounded-xl"
+               className="my-button"
                onClick={()=>handleFeedbackClick(`https://krishna07039.github.io/test.page.io/?clientName=${encodeURIComponent(d.name)}&visitDate=${encodeURIComponent(d.review)}`)}
                >Take Feedback</button>
             </div>

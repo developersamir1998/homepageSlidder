@@ -8,9 +8,45 @@
     background-color: #14161b;
   }
 }
+
 .slick-slide > div {
   margin: 0 10px;
+
+}
+
+.slick-prev, .slick-next {
+  font-size: 24px; /* Adjust the font size to change arrow size */
+  width: 40px; /* Set width of arrows */
+  height: 40px; /* Set height of arrows */
+  line-height: 1; /* Ensures proper alignment */
 }
 .mt-20 {
   margin-top: 30rem;
+}
+.my-button {
+  background-color: #4CAF50; /* Green color */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin-top: 200px ;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+}
+
+.my-button:hover {
+  background-color: #45a049; /* Green with a darker shade on hover */
+}
+
+.my-flex-container {
+  display: flex;
+  flex-direction: column; /* Same as flex-col */
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Adjust as needed */
+  padding: 4px; /* Adjust as needed */
+  margin-top: 150px;
 }
